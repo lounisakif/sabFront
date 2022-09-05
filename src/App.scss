@@ -1,0 +1,320 @@
+// //sidebar
+// $color1:rgb(30, 86, 160);
+// //navbar
+// $color2:rgb(214, 228, 240);
+// //link,text 
+// $color3:rgb(22, 49, 114);
+
+// body{
+//   color:$color3;
+// }
+// th, td {
+//   border: 1px solid $color3;
+//   padding: 8px;
+// }
+// table {
+//   border-collapse: collapse;
+//   width: 100%;
+//   color: $color3;
+// }
+// thead {
+// 	background-color:white;
+// 	color: $color3;
+// 	font-size: 0.875rem;
+// 	text-transform: uppercase;
+// 	letter-spacing: 2%;
+// }
+
+// //navbar
+// .navbar{
+//     background-color:$color2;
+//     height: 55px;
+//    .nav-icons{
+//      color:$color3;
+//      font-size:30px;
+//      margin: 5px;
+//    }
+//    .show{
+//      font-size: 35px;
+//     font-weight: bold;
+//     color:$color3;
+//    }
+  
+//     .nav-item{
+//        padding-left: 20px;
+//        height: 100%;
+       
+//     }
+//   }
+// //sidebar
+// //item text
+// .pro-item-content{
+//   color:$color2;  
+// }
+// .logo{
+//     height: 55px;
+   
+// }
+//   #header .pro-sidebar {
+//     height: 610px;
+//   }
+//   .pro-sidebar-header{
+//     height: 55px!important;
+//    padding-top: 13px;
+//    padding-bottom: 13px;
+ 
+//   }
+ 
+//   #header .pro-sidebar {
+//     width: 100%;
+//     min-width: 100%;
+//   }
+//   #header .pro-sidebar.collapsed {
+//     width: 90px;
+//     min-width: 90px;
+//   }
+//   #header .pro-sidebar-inner {
+//     background-color:$color1;
+//   }
+//  //logo
+//   #header .pro-sidebar-inner .pro-sidebar-layout .logotext p {
+//     font-size: 20px;
+//    text-align: center;
+//     color:$color3;
+//     font-weight: bold;
+//   }
+// //item
+//   #header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item {
+//     margin: 20px 0px;
+//     font-weight: bold;
+   
+//     padding-top: 0px;
+//     padding-bottom: 0px  ;
+//   }
+//   //icon
+//   #header .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item .pro-icon-wrapper {
+//     background-color:$color2;
+//     color:$color3;
+//     border-radius: 3px;
+//   }
+
+//   #header .logo {
+//     padding: 0px;
+    
+//   }
+
+//   .pro-sidebar .pro-menu > ul > .pro-sub-menu > .pro-inner-list-item {
+//     background-color:$color1;
+
+  
+//   }
+//   .pro-sidebar .pro-menu .pro-menu-item.pro-sub-menu > .pro-inner-item > .pro-arrow-wrapper .pro-arrow{
+//     border-color:$color2;
+//   }
+
+//   .pro-sidebar .pro-menu > ul > .pro-sub-menu > .pro-inner-list-item > div > ul {
+//     padding: 0px!important;
+//   }
+//   .pro-sidebar.collapsed .pro-menu > ul > .pro-menu-item.pro-sub-menu > .pro-inner-list-item > .popper-inner {
+//     background-color: $color1;
+
+    
+//   }
+
+
+
+
+//   @media only screen and (max-width: 720px) {
+//     html {
+//       overflow: hidden;
+//     }
+//   }
+// //datatable
+// //pagination bouton 
+// .bvxQGL:disabled {
+//   fill:$color3!important;
+//   color:$color3!important;
+//   background-color:$color1!important;
+// }
+// .bvxQGL {
+//   fill:$color3!important;
+//   color:$color3!important;
+//   background-color:$color1!important;
+// }
+// //text pagination
+// .jxflYm {
+//   color:$color3!important;
+// font-size: 16px;
+// background-color:$color2!important;
+// }
+// //pagination nombre row
+// .kJrhuj {
+//   background-color:$color2!important;
+//   color:$color3!important;
+// }
+// //header rows
+// .rdt_TableHeadRow{
+//  color:$color3;
+//  font-size: 12.2px;
+//  font-weight: bold;
+// }
+// .cQLlaq {
+//   background-color: white!important;
+// }
+// //header tab
+// #search{
+// width:45%;
+// border-top: none;
+// border-left: none;
+// border-right: none;
+// border-bottom: solid;
+// border-color:$color3;
+// }
+// #search::placeholder{
+//   text-align: center;
+// }
+// #search:focus{
+//   border-top: none!important;
+//   border-left: none;
+//   border-right: none;
+//   border-bottom: solid;
+ 
+//   border-color:$color1;
+// }
+// .bi{
+//   // background-color: white!important;
+// }
+// //button header
+// .btn-tab{
+// // background-color: white!important;
+// border: none;
+// color: $color3;
+// font-size: 35px;
+// margin-left: 30px;
+// }
+
+// .kWAsOx{
+// flex: none !important;
+// }
+// //header search add....
+// .gtQiQo > * {
+//   text-align: center!important;
+//   margin-left: 0px !important;
+// }
+
+// //formulaire
+
+// .text-dev{
+//   color:$color3
+// }
+// .forms-footer{
+//   color:$color3;
+//   border-top:solid;
+//   padding-top: 15px;
+//   margin-top: 15px;
+// }
+// .modal-title {
+//   width: 100% !important;
+// }
+// .forms-link{
+//   color:$color3;
+  
+//   margin-right: 12%;
+// }
+// .forms-link:hover{
+//   color:$color1;
+// }
+// .bs:hover{
+// background-color: white;
+// color:$color3;
+// border: solid;
+// }
+// .titre-forms{
+//   font-weight: bolder;
+//   font-size: 30px;
+//   text-align: center;
+//   color:$color3
+// }
+// .image{
+// border:solid;
+// color:$color3;
+
+// width:auto;
+// }
+// .rowInpt{
+//   text-align: center!important;
+// }
+// .btn-secondaire{
+// background-color: transparent;
+// border: solid;
+// color:$color3;
+// border-radius: 10%;
+// height: 45px;
+// font-weight: bold;
+// width:200px
+
+// }
+// .btn-principal{
+//   background-color:$color3;
+//  border-color: $color3;
+//   color:white;
+//   border-radius: 10%;
+//   height: 45px;
+//   font-weight: bold;
+//   width:200px
+// }
+// .btn-forms{
+//   color:white;
+// background-color: $color3;
+// text-align: center;
+// font-weight: bold;
+// border-radius: 10%;
+// border-color: $color3;
+// }
+// .btn-file{
+// color:white;
+// background-color: $color3;
+// text-align: center;
+// font-weight: bold;
+// border-top: solid;
+// border-left: none !important;
+// border-right: none !important;
+// border-bottom: none !important;
+// border-style: solid;
+// }
+// input[type="file"] {
+//   display: none;
+// }
+// .forms-textarea{
+//   height: 100px;
+// }
+
+// .forms-input{
+//   color:$color3;
+//   border-bottom: solid !important;
+//   border-top: none !important;
+//   border-left: none !important;
+//   border-right: none !important;
+//   border-radius: 0px  !important;
+//   box-shadow: none !important ;
+//   padding-top: 20px !important;
+// }
+
+ 
+//  .forms-input:focus{
+//   color:$color3;
+// box-shadow: none !important ;
+// background-color: transparent;
+// }
+
+// .rdt_TableCell{
+
+//   width: 50px!important;
+// }
+// .bi{
+//   color:$color3;
+//   font-size:'40px';
+//   background-color:$color2;
+//   font-weight:bold
+// }
+
