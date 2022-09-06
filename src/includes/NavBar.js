@@ -14,21 +14,21 @@ function NavBar(props) {
   const [Alert, setAlert] = React.useState(false);
  
   const location =useLocation()
-  const notif = async()=>{  let csrfToken = localStorage.getItem('csrfToken');
-  axios.get(process.env.REACT_APP_API_ListeB2B, {withCredentials: true  , headers: {'Authorization':  csrfToken}  })
-.then((response) => {
-  setnotification(response.data.length)}
+//   const notif = async()=>{  let csrfToken = localStorage.getItem('csrfToken');
+//   axios.get(process.env.REACT_APP_API_ListeB2B, {withCredentials: true  , headers: {'Authorization':  csrfToken}  })
+// .then((response) => {
+//   setnotification(response.data.length)}
 
-)}
-const dev = async()=>{  let csrfToken = localStorage.getItem('csrfToken');
-axios.get(process.env.REACT_APP_API_Devis, {withCredentials: true  , headers: {'Authorization':  csrfToken}  })
-.then((response) => {
-setdevis(response.data.length)}
+// )}
+// const dev = async()=>{  let csrfToken = localStorage.getItem('csrfToken');
+// axios.get(process.env.REACT_APP_API_Devis, {withCredentials: true  , headers: {'Authorization':  csrfToken}  })
+// .then((response) => {
+// setdevis(response.data.length)}
 
-)}
+// )}
 useEffect( () => {
-       notif()
-       dev()
+      //  notif()
+      //  dev()
       if(location.pathname === ''){setTitre('TABLEAU DE BORD')}
       if(location.pathname === '/'){setTitre('TABLEAU DE BORD')}
       if(location.pathname === '/produits'){setTitre('GESTION DES PRODUITS')}
@@ -44,40 +44,40 @@ useEffect( () => {
 }, [location.pathname]);
 
 
-const popover = (
-  <Popover id="popover-basic">
-    <Popover.Header as="h3">Devis Non Validés</Popover.Header>
-    <Popover.Body>
-    {devis===0?<div style={{'textAlign':'center'}}>
-           Vous n'avez aucune demande pour l'instant  
+// const popover = (
+//   // <Popover id="popover-basic">
+//   //   {/* <Popover.Header as="h3">Devis Non Validés</Popover.Header> */}
+//   //   <Popover.Body>
+//   //   {devis===0?<div style={{'textAlign':'center'}}>
+//   //          Vous n'avez aucune demande pour l'instant  
 
-    </div>
-    :<div style={{'textAlign':'center'}}> 
-       Vous avez {devis} demande(s) de devis non encore traitées!
-      <br></br>
+//   //   </div>
+//   //   :<div style={{'textAlign':'center'}}> 
+//   //      Vous avez {devis} demande(s) de devis non encore traitées!
+//   //     <br></br>
 
-      <a href='/devisNonValide'> Cliquez ici pour les traitées</a></div>}
+//   //     <a href='/devisNonValide'> Cliquez ici pour les traitées</a></div>}
     
-    </Popover.Body>
-  </Popover>
-);
-const popover2 = (
-  <Popover id="popover-basic">
-    <Popover.Header as="h3">Demande d'inscription B2B</Popover.Header>
-    <Popover.Body>
-    {notification===0?<div style={{'textAlign':'center'}}>
-           Vous n'avez aucune demande pour l'instant  
+//   //   </Popover.Body>
+//   // </Popover>
+// );
+// const popover2 = (
+//   <Popover id="popover-basic">
+//     <Popover.Header as="h3">Demande d'inscription B2B</Popover.Header>
+//     <Popover.Body>
+//     {notification===0?<div style={{'textAlign':'center'}}>
+//            Vous n'avez aucune demande pour l'instant  
 
-    </div>
-    :<div style={{'textAlign':'center'}}> 
-       Vous avez {notification} demande(s) d'insciption B2B non encore traitées!
-      <br></br>
+//     </div>
+//     :<div style={{'textAlign':'center'}}> 
+//        Vous avez {notification} demande(s) d'insciption B2B non encore traitées!
+//       <br></br>
 
-      <a href='/b2b'> Cliquez ici pour les traitées</a></div>}
+//       <a href='/b2b'> Cliquez ici pour les traitées</a></div>}
     
-    </Popover.Body>
-  </Popover>
-);
+//     </Popover.Body>
+//   </Popover>
+// );
   return(
     <>
    <Profil   show={Alert}  onHide={() => setAlert(false)}/> 
@@ -91,22 +91,22 @@ const popover2 = (
       {titre}
       </div>
       <Nav>
-          <Nav.Item >
+          {/* <Nav.Item >
           <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
                   <span id="group">
                       <IoNotifications className="nav-icons" style={{'fontSize':'27px'}}/>
                     <span className="badge badge-light" style={{'backgroundColor':'red','position':'relative','top':'-15px',left:'-18px','borderRadius':'50%',fontSize:'10px'}}>{devis}</span>
                   </span>
                   </OverlayTrigger>
-          </Nav.Item>
-          <Nav.Item>
+          </Nav.Item> */}
+          {/* <Nav.Item>
           <OverlayTrigger trigger="click" placement="bottom" overlay={popover2}>
                   <span id="group">
                       <IoPersonAddSharp className="nav-icons" style={{'fontSize':'27px'}}/>
                     <span className="badge badge-light" style={{'backgroundColor':'red','position':'relative','top':'-15px',left:'-18px','borderRadius':'50%',fontSize:'10px'}}>{notification}</span>
                   </span>
                   </OverlayTrigger>
-          </Nav.Item>
+          </Nav.Item> */}
           <Nav.Item> 
             <span id="group">
                       <IoPersonCircleSharp className="nav-icons" onClick={()=>setAlert(true)} />

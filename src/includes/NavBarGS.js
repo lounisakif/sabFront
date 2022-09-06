@@ -100,8 +100,8 @@ const popover = (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
   <Container  >
   <Navbar.Brand href="/" >
-      <div className='bi bi-shield-lock-fill' style={{'fontSize':'35px'}}></div> 
-      <div  style={{'fontSize':'15px'}} >Pro Vision <br/> Security Systems </div>
+      <div className='bi bi-box-seam' style={{'fontSize':'35px', 'margin-right':'80px', 'margin-top':'30px'}}></div> 
+      <div  style={{'fontSize':'15px',  'margin-left':'50px','margin-top':'-50px'}} >GENERALE<br/>EMBALLAGE  </div>
   </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
@@ -142,13 +142,9 @@ const popover = (
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
   <Container  >
     <Nav fill justify activeKey="/" style={{ width: '100%','padding':'0px'}}>
-      <Nav.Link href="/">Acceuil</Nav.Link>
-     
-      <NavDropdown title="Mes devis" id="collasible-nav-dropdown">
-         <NavDropdown.Item href="/devisVu">Devis</NavDropdown.Item>
-         <NavDropdown.Divider />
-       <NavDropdown.Item href="/devisNonVu">Devis non traités par notre entreprise</NavDropdown.Item>
-      </NavDropdown>
+      <Nav.Link href="/">Stock</Nav.Link>
+      <Nav.Link href="/">Bon</Nav.Link>
+      
       <Nav.Link href="/profil">Profil</Nav.Link>
 
     </Nav>

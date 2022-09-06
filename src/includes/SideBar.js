@@ -15,7 +15,7 @@ import {FaFileInvoiceDollar,FaProductHunt,FaUserCog,FaUser,FaUserTie } from "rea
 import {ImStatsDots}from 'react-icons/im'
 import {FiLogOut } from "react-icons/fi";
 import { BiCategoryAlt } from "react-icons/bi";
-import {BsShieldLockFill} from "react-icons/bs";
+import {BsBoxSeam} from "react-icons/bs";
 
 
 //import sidebar css from react-pro-sidebar module and our custom css
@@ -35,7 +35,7 @@ const SideBarSuperAdmin = (props) => {
 
   return (
     <>
-      <div id="header">
+      <div id="header" >
         {/* collapsed props to change menu size using menucollapse state */}
         <ProSidebar collapsed={menuCollapse}>
           <SidebarHeader >
@@ -43,13 +43,18 @@ const SideBarSuperAdmin = (props) => {
               {/* small and big change using menucollapse state */}
               {/* <p>{menuCollapse ? "Logo" : "Big Logo"}</p> */}
              
-              {menuCollapse ? <Row style={{'marginLeft':'0px'}} className='text-dev'><BsShieldLockFill style={{fontSize:'25px',padding:'0px',margin:'0px',width:'25px'}}/> <Col style={{'fontSize':'9px',padding:'0px'}}>PROVISION<br/>SECURITY<br/>SYSTEMS<br/></Col> </Row>
-       :<Row style={{'marginLeft':'50px'}} className='text-dev'><BsShieldLockFill style={{fontSize:'25px',padding:'0px',margin:'0px',width:'25px'}}/> <Col style={{'fontSize':'8px'}}>PROVISION<br/>SECURITY<br/>SYSTEMS<br/></Col> </Row>}
+              {menuCollapse ? <Row style={{'marginLeft':'0px'}} className='text-dev'>
+
+              <BsBoxSeam style={{fontSize:'25px',padding:'0px',margin:'0px',width:'25px'}}/> 
+              <Col style={{'fontSize':'9px',padding:'0px'}}>GENERALE<br/>EMBALLAGE<br/></Col> </Row>
+              :<Row style={{'marginLeft':'50px'}} className='text-dev'>
+              <BsBoxSeam style={{fontSize:'25px',padding:'0px',margin:'0px',width:'25px'}}/>
+              <Col style={{'fontSize':'8px'}}>GENERALE<br/>EMBALLAGE<br/></Col> </Row>}
        
       
           
           </SidebarHeader>
-          <SidebarContent>
+          <SidebarContent style={{'width':'10000px'}}>
             <Menu iconShape="square" >
               {/* <MenuItem  icon={<ImStatsDots />}>
                
